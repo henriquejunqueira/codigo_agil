@@ -1,0 +1,383 @@
+/*
+? Palheta de cores:
+* Laranja claro: #D9AB55
+* Roxo claro: #AA55D9
+* Verde claro: #55D994
+* Verde/Cinza claro: #5F8471
+* Marrom claro: #59564F
+* Branco: #ffffff
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffafa;
+  font-family: 'Nunito';
+}
+
+#menu {
+  background-color: #5f8471;
+  padding: 0px 50px;
+  height: 100px;
+  line-height: 100px;
+  overflow: hidden;
+}
+
+#logo {
+  float: left;
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+}
+
+#menu ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 10px;
+  font-size: 18px;
+}
+
+#menu ul li a:hover {
+  color: #222222;
+}
+
+#capa {
+  width: 100%;
+  height: 500px;
+  padding-top: 0;
+  background-image: url('../img/capa.jpg');
+  background-size: cover;
+}
+
+#textosCapa {
+  padding-top: 140px;
+  margin-left: 60px;
+}
+
+h3.nomeEmpresa {
+  font-weight: 700;
+  font-size: 24px;
+  color: #222222;
+}
+
+#slogan h1 {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 48px;
+  color: #fffafa;
+}
+
+.destaqueCapaPreto {
+  color: #222222;
+}
+
+.destaqueCapaBranco {
+  color: #fffafa;
+}
+
+.botaoFaleConosco {
+  margin-top: 20px;
+  margin-right: 300px;
+  margin-left: 60px;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: #5f8471;
+  background-color: #d9ab55;
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.botaoFaleConosco:hover {
+  background-color: #59564f;
+  color: #fffafa;
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.container p {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.clientesSatisfeitos {
+  background-color: #5f8471;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.container-card {
+  margin: 50px auto;
+  height: 400px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border: 2px #59564f solid;
+  float: left;
+  margin: 0 20px;
+  border-radius: 10px;
+  background-color: #59564f;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 100%;
+  margin: 20px 25%;
+}
+
+.cardServicos {
+  width: 300px;
+  height: 300px;
+  border: 2px #5f8471 solid;
+  float: left;
+  margin: 0 20px;
+  border-radius: 10px;
+  background-color: #5f8471;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.cardServicos img {
+  width: 100px;
+  margin: 20px 25%;
+}
+
+.card h3 {
+  margin: 0 20px;
+}
+
+.card p {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fffafa;
+}
+
+.cardServicos h3 {
+  margin: 0 20px;
+  font-size: 16px;
+}
+
+.cardServicos p {
+  margin: 10px 10px 5px 10px;
+  font-size: 18px;
+  color: #fffafa;
+}
+
+.cardServicos button:hover {
+  background-color: #59564f;
+}
+
+.alturaBotoes {
+  margin-bottom: 50px;
+}
+
+#containerFoto {
+  background-color: #fffafa;
+}
+
+#imagemProgramadores {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+#imagemProgramadores img {
+  width: 600px;
+  border-radius: 10px 100px 10px 100px;
+  border: 2px #5f8471 solid;
+}
+
+#imagemProgramadores p {
+  width: 500px;
+  float: right;
+  margin-right: 100px;
+  font-size: 18px;
+  border: 2px #5f8471 solid;
+  border-radius: 100px 10px 100px 10px;
+  padding: 30px 50px;
+  background-color: #59564f;
+  color: #fffafa;
+}
+
+#rodape {
+  height: 250px;
+  background-color: #5f8471;
+}
+
+#redesSociais {
+  text-align: center;
+  margin-top: 100px;
+  color: #fffafa;
+}
+
+#tituloRodape {
+  padding-top: 50px;
+}
+
+#redesSociais img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+}
+
+#direitos {
+  text-align: center;
+  color: #fffafa;
+  font-size: 18px;
+}
+
+#sobre {
+  width: 80%;
+  margin: 50px auto;
+}
+
+#sobre h2,
+#nossaEquipe h2,
+#ondeEstamos h2,
+#contato h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+#sobre h4 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+#sobre p {
+  margin-top: 20px;
+}
+
+#topicos li {
+  margin-top: 10px;
+  list-style-type: square;
+}
+
+#topicos span {
+  font-weight: bold;
+}
+
+#nossaEquipe {
+  background-color: #5f8471;
+  margin: 20px auto;
+  height: 500px;
+}
+
+#equipe {
+  width: 500px;
+  margin: 10px 40px;
+  border-radius: 30px;
+  border: 2px #5f8471 solid;
+}
+
+#equipeFuncionarios {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+#equipeFuncionarios p {
+  width: 500px;
+  float: right;
+  margin-right: 100px;
+  font-size: 18px;
+  border: 2px #5f8471 solid;
+  border-radius: 100px 10px 100px 10px;
+  padding: 75px 50px;
+  background-color: #59564f;
+  color: #fffafa;
+}
+
+#nossaEquipe h2 {
+  padding-top: 20px;
+  color: #fffafa;
+}
+
+#mapa {
+  width: 800px;
+  margin: 20px auto;
+  border: 2px #5f8471 solid;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+#mapa iframe {
+  width: 100%;
+}
+
+#contato {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#contato h2 {
+  margin-top: 20px;
+}
+
+#contato p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#formulario {
+  width: 800px;
+  margin: 20px auto;
+}
+
+#formulario input {
+  width: 820px;
+  height: 30px;
+  border: 2px #5f8471 solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#formulario textarea {
+  width: 820px;
+  height: 200px;
+  border: 2px #5f8471 solid;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#formulario button {
+  /* margin-left: 60px; */
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  border: #5f8471;
+  background-color: #d9ab55;
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+#formulario button:hover {
+  background-color: #59564f;
+  color: #fffafa;
+}
