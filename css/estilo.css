@@ -296,7 +296,7 @@ h3.nomeEmpresa {
 }
 
 #containerFotoProgramadores {
-  background-color: #fffafa;
+  /* background-color: #fffafa; */
   padding: 20px;
   height: 600px;
 }
@@ -453,7 +453,7 @@ h3.nomeEmpresa {
 
 #containerNossosContatos h2 {
   margin-top: 20px;
-  color: #222222;
+  /* color: #222222; */
 }
 
 #containerNossosContatos p {
@@ -462,7 +462,7 @@ h3.nomeEmpresa {
   padding-left: 4rem;
   text-align: left;
   font-size: 18px;
-  color: #222222;
+  /* color: #222222; */
 }
 
 #ondeEstamos {
@@ -530,4 +530,15 @@ h3.nomeEmpresa {
 
 .linkContato:hover {
   border-right: 5px solid #5f8471;
+}
+
+#containerMensagem {
+  width: 800px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#mensagemConfirmacao {
+  color: #fffafa;
+  font-size: 20px;
 }

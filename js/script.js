@@ -1,3 +1,4 @@
+// * These variables refer to the code except the contact page form
 const btnDarkModeToggle = document.getElementById('botaoTema');
 const themeSystem = localStorage.getItem('themeSystem') || 'light';
 
@@ -22,6 +23,13 @@ const containerOurContacts = localStorage.getItem('containerOurContacts');
 const containerDefault = document.getElementById('containerPrincipal');
 const containerDefaultPageIndex =
   localStorage.getItem('containerDefaultPageIndex') || 'light';
+
+// * These variables refer to the form
+const botaoEnviarMensagem = document.getElementsByClassName(
+  'botaoEnviarMensagem'
+);
+const inputName = document.getElementById('nome').value;
+const mensagemConfirmacao = document.getElementById('mensagemConfirmacao');
 
 btnDarkModeToggle.addEventListener('click', () => {
   let oldTheme = localStorage.getItem('themeSystem') || 'light';
@@ -129,3 +137,16 @@ defineCurrentTheme(
   containerOurContacts,
   containerDefaultPageIndex
 );
+
+function openPageContact() {
+  window.open('../contato.html', '_self');
+}
+
+function sendMessage() {
+  if (inputName !== '') {
+    event.preventDefault();
+    const inputName = document.getElementById('nome').value;
+    mensagemConfirmacao.innerHTML = `Mensagem enviada com sucesso! Agradeçemos por entrar em contato conosco ${inputName}`;
+  }
+  return false;
+}

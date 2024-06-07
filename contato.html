@@ -115,6 +115,9 @@
         <p>
           Preencha o formulário abaixo para enviar um e-mail ou ligue para nós!
         </p>
+        <div id="containerMensagem">
+          <span id="mensagemConfirmacao"></span>
+        </div>
         <div id="formulario">
           <form>
             <input
@@ -136,7 +139,9 @@
               rows="10"
             ></textarea
             ><br /><br />
-            <button id="botaoEnviarMensagem">Enviar</button>
+            <button id="botaoEnviarMensagem" onclick="sendMessage()">
+              Enviar
+            </button>
           </form>
         </div>
       </section>
