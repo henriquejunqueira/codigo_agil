@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Portifólio Henrique Junqueira</title>
+    <title>Código Ágil</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,9 +22,7 @@
           <li><a href="servicos.html">Serviços</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <button>Tema</button>
-          <!-- light theme: https://icons.getbootstrap.com/icons/brightness-high/ -->
-          <!-- dark theme: https://icons.getbootstrap.com/icons/moon-stars-fill/-->
+          <button id="botaoTema"></button>
         </ul>
       </nav>
     </header>
@@ -33,7 +31,7 @@
         <div id="slogan">
           <div id="textosCapa">
             <h3 class="nomeEmpresa">
-              <span class="destaqueCapaBranco">Empresa</span> Desenvolvedora Web
+              <span class="destaqueCapaBranco">Código</span> Ágil
             </h3>
             <h1>
               Transformando suas idei<span class="destaqueCapaPreto"
@@ -46,8 +44,8 @@
           </button>
         </div>
       </section>
-      <section class="container">
-        <p>
+      <section id="containerPrincipal">
+        <p class="textoBranco">
           Bem-vindo ao futuro da sua presença digital! Em um mundo cada vez mais
           conectado, ter uma presença online forte e eficaz é fundamental para o
           sucesso de qualquer negócio. Aqui, acreditamos que cada site é mais do
@@ -55,7 +53,7 @@
           representação de seus valores e um canal essencial para interagir com
           seus clientes.
         </p>
-        <p>
+        <p class="textoBranco">
           Quando se trata de criar uma presença online impactante, a experiência
           do usuário é primordial. Nossa missão é garantir que cada visitante do
           seu site tenha uma experiência agradável e memorável. Sabemos que a
@@ -63,7 +61,7 @@
           interfaces intuitivas e designs atraentes que capturam a essência do
           seu negócio desde o primeiro clique.
         </p>
-        <p>
+        <p class="textoBranco">
           A satisfação do cliente está no coração de tudo o que fazemos.
           Acreditamos que um site deve ser mais do que apenas bonito – ele deve
           ser funcional, rápido e fácil de navegar. Trabalhamos incansavelmente
@@ -75,16 +73,19 @@
         </p>
       </section>
       <section class="clientesSatisfeitos">
-        <div class="container-card">
+        <h2 id="depoimentos">Depoimentos</h2>
+        <div class="containerCardDepoimentos">
           <div class="card">
             <img src="./img/depoimento1.png" alt="" />
-            <h3>Maria Fernanda, Empresária</h3>
+            <h3><span class="cliente">Maria Fernanda, Empresária</span></h3>
             <p>Trabalhar com essa equipe foi uma experiência incrível!</p>
           </div>
 
           <div class="card">
             <img src="./img/depoimento2.png" alt="" />
-            <h3>Carla Menezes, Coach de Carreira</h3>
+            <h3>
+              <span class="cliente">Carla Menezes, Coach de Carreira</span>
+            </h3>
             <p>
               Desde o primeiro contato, senti que estavam realmente
               comprometidos em entender minhas necessidades e objetivos.
@@ -93,7 +94,9 @@
 
           <div class="card">
             <img src="./img/depoimento3.png" alt="" />
-            <h3>Lucas Andrade, Fotógrafo Profissional</h3>
+            <h3>
+              <span class="cliente">Lucas Andrade, Fotógrafo Profissional</span>
+            </h3>
             <p>
               A equipe de desenvolvimento superou todas as minhas
               expectativas!!!
@@ -101,7 +104,7 @@
           </div>
         </div>
       </section>
-      <section id="containerFoto">
+      <section id="containerFotoProgramadores">
         <div id="imagemProgramadores">
           <img src="./img/equipe02.jpg" alt="" />
           <p>
