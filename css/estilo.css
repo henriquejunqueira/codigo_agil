@@ -22,6 +22,11 @@
   --dark: #fffafa;
 }
 
+body {
+  background-color: var(--white);
+  font-family: 'Nunito';
+}
+
 svg {
   width: 24px;
   height: 24px;
@@ -42,11 +47,6 @@ svg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: var(--white);
-  font-family: 'Nunito';
 }
 
 #menu {
@@ -296,7 +296,6 @@ h3.nomeEmpresa {
 }
 
 #containerFotoProgramadores {
-  /* background-color: #fffafa; */
   padding: 20px;
   height: 600px;
 }
@@ -309,7 +308,6 @@ h3.nomeEmpresa {
 #imagemProgramadores img {
   width: 600px;
   border-radius: 10px 100px 10px 100px;
-  border: 2px #5f8471 solid;
 }
 
 #imagemProgramadores p {
@@ -317,10 +315,9 @@ h3.nomeEmpresa {
   float: right;
   margin-right: 100px;
   font-size: 18px;
-  border: 2px #5f8471 solid;
   border-radius: 100px 10px 100px 10px;
   padding: 30px 50px;
-  background-color: #59564f;
+  background-color: #516169;
   color: #fffafa;
 }
 
@@ -399,7 +396,6 @@ h3.nomeEmpresa {
   width: 500px;
   margin: 10px 40px;
   border-radius: 30px;
-  border: 2px #5f8471 solid;
 }
 
 #equipeFuncionarios {
@@ -412,7 +408,6 @@ h3.nomeEmpresa {
   float: right;
   margin-right: 100px;
   font-size: 18px;
-  border: 2px #5f8471 solid;
   border-radius: 100px 10px 100px 10px;
   padding: 75px 50px;
   background-color: #222222;
@@ -539,6 +534,5 @@ h3.nomeEmpresa {
 }
 
 #mensagemConfirmacao {
-  color: #fffafa;
   font-size: 20px;
 }

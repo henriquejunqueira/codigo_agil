@@ -28,7 +28,7 @@ const containerDefaultPageIndex =
 const botaoEnviarMensagem = document.getElementsByClassName(
   'botaoEnviarMensagem'
 );
-const inputName = document.getElementById('nome').value;
+
 const mensagemConfirmacao = document.getElementById('mensagemConfirmacao');
 
 btnDarkModeToggle.addEventListener('click', () => {
@@ -115,14 +115,8 @@ function defineCurrentTheme(
       containerWorks === 'light' ? '#202629' : '#fffafa';
   });
 
-  // containerPageOurContacts.style.backgroundColor =
-  //   containerOurContacts === 'light' ? '#202629' : '#fffafa';
-
-  if (containerOurContacts === 'light') {
-    containerPageOurContacts.style.backgroundColor = '#202629';
-  } else {
-    containerPageOurContacts.style.backgroundColor = '#fffafa';
-  }
+  containerPageOurContacts.style.backgroundColor =
+    containerOurContacts === 'light' ? '#202629' : '#fffafa';
 
   containerDefault.style.backgroundColor =
     containerDefaultPageIndex === 'light' ? '#fffafa' : '#202629';
@@ -142,11 +136,76 @@ function openPageContact() {
   window.open('../contato.html', '_self');
 }
 
+function verificaCaracteresProibidosNome(nome) {
+  const caracteresEspeciais = /[!@#$%^&*(),.?":{}|<>]/g;
+  return caracteresEspeciais.test(nome);
+}
+
+function verificaCaracteresProibidosEmail(string) {
+  const caracteresEspeciaisemail = /[!#$%^&*(),?":{}|<>]/g;
+  return caracteresEspeciaisemail.test(string);
+}
+
+function verificaCaracteresProibidosTextarea(textarea) {
+  const caracteresEspeciaisemail = /[/'";@#$%^&*()?"{}|<>]/g;
+  return caracteresEspeciaisemail.test(textarea);
+}
+
 function sendMessage() {
-  if (inputName !== '') {
+  const inputName = document.getElementById('nome').value;
+  const inputEmail = document.getElementById('email').value;
+  const textareaMensagem = document.getElementById('mensagem').value;
+
+  // * Checks if form fields are empty
+  let nomeVazio = inputName !== '';
+  let emailVazio = inputEmail !== '';
+  let msgVazia = textareaMensagem !== '';
+
+  if (nomeVazio || emailVazio || msgVazia) {
     event.preventDefault();
-    const inputName = document.getElementById('nome').value;
+    mensagemConfirmacao.style.color = '#fffafa';
+    mensagemConfirmacao.style.backgroundColor = '#5565d9';
     mensagemConfirmacao.innerHTML = `Mensagem enviada com sucesso! Agradeçemos por entrar em contato conosco ${inputName}`;
   }
+
+  if (!nomeVazio || !emailVazio || !msgVazia) {
+    event.preventDefault();
+    mensagemConfirmacao.style.color = '#fffafa';
+    mensagemConfirmacao.style.backgroundColor = '#DC2B56';
+    mensagemConfirmacao.innerHTML = `Por favor, preencha todos os campos!`;
+  }
+
+  // * Checks if form fields have special characters
+  let nomeCharInvalido = verificaCaracteresProibidosNome(inputName);
+  let emailCharInvalido = verificaCaracteresProibidosEmail(inputEmail);
+  let msgCharInvalido = verificaCaracteresProibidosTextarea(textareaMensagem);
+
+  if (nomeCharInvalido) {
+    event.preventDefault();
+    mensagemConfirmacao.style.color = '#fffafa';
+    mensagemConfirmacao.style.backgroundColor = '#DC2B56';
+    mensagemConfirmacao.innerHTML = `Por favor, utilize caracteres válidos no nome!`;
+  }
+
+  if (emailCharInvalido) {
+    event.preventDefault();
+    mensagemConfirmacao.style.color = '#fffafa';
+    mensagemConfirmacao.style.backgroundColor = '#DC2B56';
+    mensagemConfirmacao.innerHTML = `Por favor, utilize caracteres válidos no email!`;
+    return false;
+  }
+
+  if (msgCharInvalido) {
+    event.preventDefault();
+    mensagemConfirmacao.style.color = '#fffafa';
+    mensagemConfirmacao.style.backgroundColor = '#DC2B56';
+    mensagemConfirmacao.innerHTML = `Por favor, utilize caracteres válidos na mensagem!`;
+    return false;
+  }
+
+  setTimeout(() => {
+    mensagemConfirmacao.innerHTML = '';
+  }, 5000);
+
   return false;
 }
