@@ -6,6 +6,6 @@
 
 ![Capa e Menu no Modo Tema Claro do Site](/img/capa-modo-claro.png)
 
-# Página com o tema escuro:
+## Página com o tema escuro:
 
 ![Capa e Menu no Modo Tema Claro do Site](/img/capa-modo-escuro.png)
