@@ -135,10 +135,7 @@ defineCurrentTheme(
 );
 
 function openPageContact() {
-  window.open(
-    'https://henriquejunqueira.github.io/codigo_agil/contato.html',
-    '_self'
-  );
+  window.open('../contato.html', '_self');
 }
 
 function verificaCaracteresProibidosNome(nome) {
