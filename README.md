@@ -4,8 +4,8 @@
 
 ## Página com o tema claro:
 
-![Capa e Menu no Modo Tema Claro do Site](https://henriquejunqueira.github.io/codigo_agil/img/capa-modo-claro.png)
+![Capa e Menu no Modo Tema Claro do Site](/img/capa-modo-claro.png)
 
 # Página com o tema escuro:
 
-![Capa e Menu no Modo Tema Claro do Site](https://henriquejunqueira.github.io/codigo_agil/img/capa-modo-escuro.png)
+![Capa e Menu no Modo Tema Claro do Site](/img/capa-modo-escuro.png)
