@@ -32,6 +32,7 @@ const botaoEnviarMensagem = document.getElementsByClassName(
 const mensagemConfirmacao = document.getElementById('mensagemConfirmacao');
 
 const btnFaleConosco = document.getElementsByClassName('botaoFaleConosco');
+const btnNossosServicos = document.getElementsByClassName('btnNossosServicos');
 
 btnDarkModeToggle.addEventListener('click', () => {
   let oldTheme = localStorage.getItem('themeSystem') || 'light';
@@ -135,7 +136,8 @@ defineCurrentTheme(
 );
 
 function openPageContact() {
-  window.open('../contato.html', '_self');
+  let url = 'https://henriquejunqueira.github.io/codigo_agil/contato.html';
+  window.open(url, '_self');
 }
 
 function verificaCaracteresProibidosNome(nome) {
