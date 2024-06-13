@@ -31,6 +31,8 @@ const botaoEnviarMensagem = document.getElementsByClassName(
 
 const mensagemConfirmacao = document.getElementById('mensagemConfirmacao');
 
+const btnFaleConosco = document.getElementsByClassName('botaoFaleConosco');
+
 btnDarkModeToggle.addEventListener('click', () => {
   let oldTheme = localStorage.getItem('themeSystem') || 'light';
   let newTheme = oldTheme === 'light' ? 'dark' : 'light';
